@@ -12,7 +12,16 @@ import os
 import cv2
 
 # User-defined settings
-VIDEO_NAMES = ['bison-video.mp4', 'wolf-video.mp4']  # Names of video files to extract frames from
+VIDEO_NAMES = [
+    'layout1_angle0_fulltest1_corrected.mp4', 
+    'layout1_angle1_fulltest1_corrected.mp4', 
+    'layout1_angle2_fulltest1_corrected.mp4', 
+    'layout1_overhead_fulltest1_720p.mp4', 
+    'layout3_angle1_fulltest1_corrected.mp4', 
+    'layout3_angle2_fulltest1_corrected.mp4', 
+    'layout3_angle3_fulltest1_corrected.mp4', 
+    'layout1_overhead_fulltest1_720p.mp4',
+    ]  # Names of video files to extract frames from
 OUTPUT_FOLDER_NAME = 'extracted_pics' # Name of folder to save extracted images to
 SKIP_FRAMES = 90 # Number of frames to skip between extracted images
 RESIZE_FACTOR = 0.5 # Factor to resize images to when saving
@@ -24,8 +33,6 @@ FOLDER_PATH = os.path.join(CWD_PATH,OUTPUT_FOLDER_NAME)
 # If specified folder doesn't exist, create it
 if not os.path.isdir(FOLDER_PATH):
     os.mkdir(FOLDER_PATH)
-
-
 
 # Go through each video and extract frames
 for file in VIDEO_NAMES:
