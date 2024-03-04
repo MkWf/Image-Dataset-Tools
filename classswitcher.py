@@ -1,10 +1,14 @@
 import os
 
 def switch_first_character(line):
+    #0 and 1: cardfront and cardback. roboflow uses alphabetical order so it needs to be changed
+    #3 for blackjack ntl because no currency was used, so it moved it from 4 to 3
     if line.startswith('0'):
         return '1' + line[1:]
     elif line.startswith('1'):
         return '0' + line[1:]
+    elif line.startswith('3'):
+        return '4' + line[1:]
     else:
         return line
 
