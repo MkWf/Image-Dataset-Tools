@@ -2,12 +2,12 @@ train: ../train/images
 val: ../valid/images
 test: ../test/images
 
-nc: 3
-names: ['cardback', 'cardfront', 'chip']
+nc: 4
+names: ['cardback', 'cardfront', 'chip', 'currency', 'hand']
 
 roboflow:
   workspace: mark-wassef-6yjya
-  project: side-nul3f
-  version: 2
+  project: l-nahxx
+  version: 1
   license: CC BY 4.0
-  url: https://universe.roboflow.com/mark-wassef-6yjya/side-nul3f/dataset/2
+  url: https://universe.roboflow.com/mark-wassef-6yjya/l-nahxx/dataset/1
