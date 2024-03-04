@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 5
+names: ['cardfront', 'cardback', 'chip', 'currency', 'hand']
+
+roboflow:
+  workspace: mark-wassef-6yjya
+  project: l-nahxx
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/mark-wassef-6yjya/l-nahxx/dataset/1
